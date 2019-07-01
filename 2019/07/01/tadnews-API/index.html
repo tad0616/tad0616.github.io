@@ -17,7 +17,7 @@
   runtime_unit: '天'
 
   
-}</script></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目錄</div><div class="sidebar-toc__progress"><span class="progress-notice">你已經讀了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#取得所有分類"><span class="toc-number">1.</span> <span class="toc-text">取得所有分類</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#取得所有新聞"><span class="toc-number">2.</span> <span class="toc-text">取得所有新聞</span></a></li></ol></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(/img/city-1252643.svg)"><div id="page-header"><span class="pull-left"> <a class="blog_title" id="site-name" href="/">Tad 的五四三</a></span><div class="open toggle-menu pull-right"><div class="menu-icon-first"></div><div class="menu-icon-second"></div><div class="menu-icon-third"></div></div><span class="pull-right menus"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a><script>document.body.addEventListener('touchstart', function(){ });</script></span><span class="pull-right"></span></div><div id="post-info"><div id="post-title"><div class="posttitle">tadnews API</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 發表於 2019-07-01<span class="post-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i> 更新於 2019-07-01</time></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><h2 id="取得所有分類"><a href="#取得所有分類" class="headerlink" title="取得所有分類"></a>取得所有分類</h2><p>http://網域/modules/tadnews/app_api.php?op=get_cates<br>參數：</p>
+}</script></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目錄</div><div class="sidebar-toc__progress"><span class="progress-notice">你已經讀了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#取得所有分類"><span class="toc-number">1.</span> <span class="toc-text">取得所有分類</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#取得所有新聞"><span class="toc-number">2.</span> <span class="toc-text">取得所有新聞</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#顯示某一篇文章"><span class="toc-number">3.</span> <span class="toc-text">顯示某一篇文章</span></a></li></ol></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(/img/city-1252643.svg)"><div id="page-header"><span class="pull-left"> <a class="blog_title" id="site-name" href="/">Tad 的五四三</a></span><div class="open toggle-menu pull-right"><div class="menu-icon-first"></div><div class="menu-icon-second"></div><div class="menu-icon-third"></div></div><span class="pull-right menus"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a><script>document.body.addEventListener('touchstart', function(){ });</script></span><span class="pull-right"></span></div><div id="post-info"><div id="post-title"><div class="posttitle">tadnews API</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 發表於 2019-07-01<span class="post-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i> 更新於 2019-07-01</time></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><h2 id="取得所有分類"><a href="#取得所有分類" class="headerlink" title="取得所有分類"></a>取得所有分類</h2><p>http://網域/modules/tadnews/app_api.php?op=get_cates<br>參數：</p>
 <ul>
 <li>get_cates</li>
 </ul>
@@ -51,7 +51,42 @@
 <li>uid：發布者編號</li>
 <li>uid_name：發布者姓名</li>
 <li>counter：閱讀人次</li>
+<li>content：文章內容</li>
 <li>passwd：是否需要密碼</li>
+<li>g_txt：可閱讀群組</li>
+<li>files：附檔</li>
+<li>enable：是否開放</li>
+<li>have_read_chk：是否已簽收（若應簽收而未簽收傳回false、已簽收會傳回日期、不須簽收傳回null）</li>
+<li>back_news_link：上一篇新聞連結</li>
+<li>back_news_title：上一篇新聞標題</li>
+<li>next_news_link：下一篇新聞連結</li>
+<li>next_news_title：下一篇新聞標題</li>
+<li>image_big：封面圖</li>
+<li>image_thumb：封面圖縮圖位置</li>
+<li>not_news：非新聞（即自訂頁面）</li>
+</ul>
+<h2 id="顯示某一篇文章"><a href="#顯示某一篇文章" class="headerlink" title="顯示某一篇文章"></a>顯示某一篇文章</h2><p>http://網域/modules/tadnews/app_api.php?op=show_news&amp;nsn=123<br>參數：</p>
+<ul>
+<li>op：show_news</li>
+<li>nsn：新聞編號</li>
+</ul>
+<p>回傳內容：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#123;<span class="attr">"passwd"</span>:<span class="literal">false</span>,<span class="attr">"nsn"</span>:<span class="string">"1"</span>,<span class="attr">"pic"</span>:<span class="literal">null</span>,<span class="attr">"ncsn"</span>:<span class="string">"1"</span>,<span class="attr">"cate_name"</span>:<span class="string">"教育新知"</span>,<span class="attr">"post_date"</span>:<span class="string">"2019-01-22"</span>,<span class="attr">"prefix_tag"</span>:<span class="string">"&lt;a class='badge' style='background-color:blue;font-weight:normal;color:#FFFFFF;text-shadow:none;' href='http:\/\/網域\/modules\/tadnews\/index.php?tag_sn=1'&gt;公告&lt;\/a&gt;"</span>,<span class="attr">"need_sign"</span>:<span class="string">""</span>,<span class="attr">"news_title"</span>:<span class="string">"網站建置中"</span>,<span class="attr">"uid"</span>:<span class="string">"1"</span>,<span class="attr">"uid_name"</span>:<span class="string">"吳弘凱"</span>,<span class="attr">"counter"</span>:<span class="string">"242"</span>,<span class="attr">"content"</span>:<span class="string">"&lt;p&gt;歡迎蒞臨本網站，網站目前尚在建置中，資料會陸續上線，若有找不到的資料，歡迎留言或跟網站管理者聯繫，也歡迎您提供建議，讓本網站更為完整並符合需求。\r\n"</span>,<span class="attr">"g_txt"</span>:<span class="string">"全部開放"</span>,<span class="attr">"files"</span>:<span class="string">"二元搜尋法.doc : http:\/\/tad.lces.tn.edu.twhttp:\/\/網域\/modules\/tadnews\/index.php?op=tufdl&amp;files_sn=1,"</span>,<span class="attr">"enable"</span>:<span class="string">"1"</span>,<span class="attr">"have_read_chk"</span>:<span class="literal">null</span>,<span class="attr">"back_news_link"</span>:<span class="string">""</span>,<span class="attr">"back_news_title"</span>:<span class="string">""</span>,<span class="attr">"next_news_link"</span>:<span class="string">"http:\/\/網域\/modules\/tadnews\/index.php?ncsn=1&amp;nsn=2"</span>,<span class="attr">"next_news_title"</span>:<span class="string">"01-22 大腦愈開心，學得愈好！高效學習６個祕密..."</span>,<span class="attr">"image_big"</span>:<span class="literal">null</span>,<span class="attr">"image_thumb"</span>:<span class="literal">null</span>,<span class="attr">"not_news"</span>:<span class="string">"0"</span>&#125;]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>passwd：是否需要密碼</li>
+<li>nsn：新聞編號</li>
+<li>pic：封面圖位置</li>
+<li>ncsn：分類編號</li>
+<li>cate_name：分類標題</li>
+<li>post_date：發布日期</li>
+<li>prefix_tag：標籤</li>
+<li>need_sign：是否需要簽收</li>
+<li>news_title：新聞標題</li>
+<li>uid：發布者編號</li>
+<li>uid_name：發布者姓名</li>
+<li>counter：閱讀人次</li>
+<li>content：文章內容</li>
 <li>g_txt：可閱讀群組</li>
 <li>files：附檔</li>
 <li>enable：是否開放</li>

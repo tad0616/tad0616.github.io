@@ -1,0 +1,319 @@
+<!DOCTYPE HTML>
+<html lang="zh-TW">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="Tad 的五四三">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="theme-version" content="1.2.3">
+    <meta name="root" content="/">
+    <link rel="dns-prefetch" href="https://tad0616.github.io">
+    <!--SEO-->
+
+    <meta name="keywords" content="XOOPS,api,tadtools,網站工具包模組">
+
+
+    <meta name="description" content="取得網站資訊http://網域/modules/tadtools/app_api.php?op=web_info參數：
+
+web_info
+
+http://www.lces.tn.edu.tw/...">
+
+
+
+<meta name="robots" content="all">
+<meta name="google" content="all">
+<meta name="googlebot" content="all">
+<meta name="verify" content="all">
+
+    <!--Title-->
+
+
+<title>TadTools API | Tad 的五四三</title>
+
+
+    <link rel="alternate" href="/atom.xml" title="Tad 的五四三" type="application/atom+xml">
+
+
+    <link rel="icon" href="/favicon.ico">
+
+    
+
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.5.0">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+
+
+
+
+    
+	<div class="hide">
+		<script type="text/javascript">
+			var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+	</div>
+
+
+
+
+
+
+    
+
+</head>
+
+</html>
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+
+<body>
+    <header class="main-header"  style="background-image:url(http://snippet.shenliyang.com/img/banner.jpg)"  >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='Tad'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+        	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+                 <img src="/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
+    	</div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                    <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="https://tad0616.github.io">Tad 的五四三</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/"><i class="fa "></i>首頁</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/archives/"><i class="fa "></i>時間軸</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="TadTools API">
+            
+	            TadTools API
+            
+        </h1>
+        <div class="post-meta">
+    
+        <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+            
+        </span>
+    
+
+    
+        <span class="fa-wrap">
+            <i class="fa fa-tags"></i>
+            <span class="tags-meta">
+                
+                    <a class="tag-link" href="/tags/XOOPS/">XOOPS</a> <a class="tag-link" href="/tags/api/">api</a> <a class="tag-link" href="/tags/tadtools/">tadtools</a> <a class="tag-link" href="/tags/網站工具包模組/">網站工具包模組</a>
+                
+            </span>
+        </span>
+    
+
+    
+        
+        <span class="fa-wrap">
+            <i class="fa fa-clock-o"></i>
+            <span class="date-meta">2019/07/17</span>
+        </span>
+        
+    
+</div>
+            
+            
+    </div>
+    
+    <div class="post-body post-content">
+        <h2 id="取得網站資訊"><a href="#取得網站資訊" class="headerlink" title="取得網站資訊"></a>取得網站資訊</h2><p>http://網域/modules/tadtools/app_api.php?op=web_info<br>參數：</p>
+<ul>
+<li>web_info</li>
+</ul>
+<p><a href="http://www.lces.tn.edu.tw/modules/tadtools/app_api.php?op=web_info" target="_blank" rel="noopener">http://www.lces.tn.edu.tw/modules/tadtools/app_api.php?op=web_info</a> 回傳內容：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"sitename"</span>: <span class="string">"台南市龍崎國小"</span>,</span><br><span class="line">    <span class="attr">"slogan"</span>: <span class="string">"尊重人性 開發潛能 創造價值"</span>,</span><br><span class="line">    <span class="attr">"adminmail"</span>: <span class="string">"huang1218@tn.edu.tw"</span>,</span><br><span class="line">    <span class="attr">"meta_description"</span>: <span class="string">"臺南市龍崎區龍崎國民小學（簡稱龍崎國小），是一所位於中華民國臺南市龍崎區的國民小學。特色 絲竹樂 竹編 畫繪本...等各項才藝"</span>,</span><br><span class="line">    <span class="attr">"slide"</span>: [</span><br><span class="line">        <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tad_themes\/school2014\/slide\/slide_2_1.jpg"</span>,</span><br><span class="line">        <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tad_themes\/school2014\/slide\/slide_2_2.jpg"</span>,</span><br><span class="line">        <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tad_themes\/school2014\/slide\/slide_2_4.jpg"</span>,</span><br><span class="line">        <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tad_themes\/school2014\/slide\/slide_2_5.jpg"</span>,</span><br><span class="line">        <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tad_themes\/school2014\/slide\/slide_2_11.jpg"</span>,</span><br><span class="line">        <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tad_themes\/school2014\/slide\/slide_2_12.jpg"</span>,</span><br><span class="line">        <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tad_themes\/school2014\/slide\/slide_2_14.jpg"</span>,</span><br><span class="line">        <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tad_themes\/school2014\/slide\/slide_2_15.jpg"</span>,</span><br><span class="line">        <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tad_themes\/school2014\/slide\/slide_2_16.jpg"</span>,</span><br><span class="line">        <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tad_themes\/school2014\/slide\/slide_2_17.jpg"</span></span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>sitename：網站名稱</li>
+<li>slogan：網站口號</li>
+<li>adminmail：管理員信箱</li>
+<li>meta_description：網站簡介</li>
+<li>slide：網站圖片</li>
+</ul>
+<h2 id="取得該站有使用的模組"><a href="#取得該站有使用的模組" class="headerlink" title="取得該站有使用的模組"></a>取得該站有使用的模組</h2><p>http://網域/modules/tadtools/app_api.php?op=web_modules<br>參數：</p>
+<ul>
+<li>web_modules</li>
+</ul>
+<p><a href="http://www.lces.tn.edu.tw/modules/tadtools/app_api.php?op=web_modules" target="_blank" rel="noopener">http://www.lces.tn.edu.tw/modules/tadtools/app_api.php?op=web_modules</a> 回傳內容：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"tiny D0"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"tinyd0"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"本站消息"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"tadnews"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"電子相簿"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"tadgallery"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"Tad Tools 工具包"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"tadtools"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"影音播放"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"tad_player"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"營養午餐公告"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"tad_lunch2"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"系統"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"system"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"佈景管理"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"tad_themes"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"維修通報"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"tad_repair"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"快速登入"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"tad_login"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"評鑑檔案管理"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"tad_evaluation"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"UGM_自訂頁面"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"ugm_page"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"行事曆"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"tad_cal"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"榮譽榜"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"tad_honor"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"網路資料櫃"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"tad_uploader"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"私人訊息"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"pm"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"使用者管理"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"profile"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"站長工具箱"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"tad_adm"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"網站計數器"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"logcounterx"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"好站連結"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"tad_link"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"我的標籤"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"mytabs"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"作業上傳模組"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"tad_assignment"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"友站消息"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"tad_rss"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"網路設備記錄"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"info_whats"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"線上書籍3"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"tad_book3"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"name"</span>: <span class="string">"聯絡我們"</span>,</span><br><span class="line">        <span class="attr">"dirname"</span>: <span class="string">"ugm_contact_us"</span></span><br><span class="line">    &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>name：模組名稱</li>
+<li>dirname：目錄名稱</li>
+</ul>
+
+    </div>
+    
+    <div class="post-footer">
+        <div>
+            
+                转载声明：商業轉載請聯繫作者獲得授權，非商業轉載請註明出處 © <a href="https://tad0616.github.io" target="_blank">Tad的543</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+
+<div class="article-nav prev-next-wrap clearfix">
+    
+        <a href="/2019/07/18/TadGallery-API/" class="pre-post btn btn-default" title='TadGallery API'>
+            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+            <span class="hidden-xs">TadGallery API</span>
+        </a>
+    
+    
+        <a href="/2019/07/01/tadnews-API/" class="next-post btn btn-default" title='tadnews API'>
+            <span class="hidden-lg">下一篇</span>
+            <span class="hidden-xs">tadnews API</span><i class="fa fa-angle-right fa-fw"></i>
+        </a>
+    
+</div>
+
+
+    <div id="comments">
+        
+	
+    <div id="vcomments" class="valine"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/assets/valine.min.js"></script>
+
+    <script>
+        new Valine({
+            av: AV,
+            el: '#vcomments',
+            appId: 'xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz',
+            appKey: 'erIpQac4azoCmgfBB7Dl9maa',
+            placeholder: '说点什么吧',
+            notify: false,
+            verify: true,
+            avatar: 'mm',
+            meta: 'nick,mail'.split(','),
+            pageSize: '10',
+            path: window.location.pathname,
+            lang: 'zh-TW'.toLowerCase()
+        })
+    </script>
+
+
+    </div>
+
+
+
+
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">文章目錄</h3>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#取得網站資訊"><span class="toc-text">取得網站資訊</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#取得該站有使用的模組"><span class="toc-text">取得該站有使用的模組</span></a></li></ol>
+        
+    </div>
+</aside>
+
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+
+<a id="back-to-top" class="icon-btn hide">
+	<i class="fa fa-chevron-up"></i>
+</a>
+
+
+
+
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="busuanzi">
+    
+</div>
+
+            </div>
+            <div class="col-sm-12">
+                <span>Copyright &copy; 2017
+                </span> |
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> |
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="/js/app.js?rev=@@hash"></script>
+
+</body>
+</html>

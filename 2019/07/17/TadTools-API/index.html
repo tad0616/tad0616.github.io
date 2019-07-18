@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="utf-8">
-  
+    <meta charset="utf-8">
 
-  
-  <title>TadTools API | Tad 的五四三</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="這是用來取的 XOOPS 的一些基本資訊，如站名、使用的模組等資訊的API，json格式。">
+    
+
+    
+    <title>TadTools API | Tad 的五四三</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="XOOPS,api,tadtools,網站工具包模組">
+    
+    <meta name="description" content="這是用來取的 XOOPS 的一些基本資訊，如站名、使用的模組等資訊的API，json格式。">
 <meta name="keywords" content="XOOPS,api,tadtools,網站工具包模組">
 <meta property="og:type" content="article">
 <meta property="og:title" content="TadTools API">
@@ -19,83 +24,158 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TadTools API">
 <meta name="twitter:description" content="這是用來取的 XOOPS 的一些基本資訊，如站名、使用的模組等資訊的API，json格式。">
-  
-    <link rel="alternate" href="/atom.xml" title="Tad 的五四三" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+    
+
+    
+        <link rel="alternate" href="/" title="Tad 的五四三" type="application/atom+xml">
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+
 </head>
 </html>
 <body>
-  <div id="container">
     <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Tad 的五四三</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">亂七八糟的紀錄用</a>
-        </h2>
-      
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">亂七八糟的紀錄用</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">首頁</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/hexo/">hexo</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/xoops/">xoops</a></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">關於</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜尋" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="輸入關鍵字..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜尋"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://tad0616.github.io"></form>
-      </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '頁面',
+            CATEGORIES: '分類',
+            TAGS: '標籤',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </header>
-      <div class="outer">
-        <section id="main"><article id="post-TadTools-API" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/07/17/TadTools-API/" class="article-date">
-  <time datetime="2019-07-17T07:15:43.000Z" itemprop="datePublished">2019-07-17</time>
-</a>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/xoops/">xoops</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      TadTools API
+    <a class="page-title-link" href="/categories/xoops/">xoops</a>
     </h1>
-  
+</div>
 
-      </header>
+                        <div class="main-body-content">
+                            <article id="post-TadTools-API" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>這是用來取的 XOOPS 的一些基本資訊，如站名、使用的模組等資訊的API，json格式。</p>
+        <h1 class="article-title" itemprop="name">
+        TadTools API
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2019/07/17/TadTools-API/" class="article-date">
+            <time datetime="2019-07-17T07:15:43.000Z" itemprop="datePublished">2019-07-17</time>
+        </a>
+    </div>
+
+		
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/XOOPS/">XOOPS</a>, <a class="tag-link" href="/tags/api/">api</a>, <a class="tag-link" href="/tags/tadtools/">tadtools</a>, <a class="tag-link" href="/tags/網站工具包模組/">網站工具包模組</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p>這是用來取的 XOOPS 的一些基本資訊，如站名、使用的模組等資訊的API，json格式。</p>
 <a id="more"></a>
 
 <h2 id="取得網站資訊"><a href="#取得網站資訊" class="headerlink" title="取得網站資訊"></a>取得網站資訊</h2><p>http://網域/modules/tadtools/app_api.php?op=web_info<br>參數：</p>
@@ -124,143 +204,413 @@
 <li>dirname：目錄名稱</li>
 </ul>
 
-      
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="https://tad0616.github.io/2019/07/17/TadTools-API/" data-id="cjy8ezem9000j00uym02g1d7p" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
     </div>
-    <footer class="article-footer">
-      <a data-url="https://tad0616.github.io/2019/07/17/TadTools-API/" data-id="cjy8ezem9000j00uym02g1d7p" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/XOOPS/">XOOPS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/api/">api</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tadtools/">tadtools</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/網站工具包模組/">網站工具包模組</a></li></ul>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "Tad"
+        },
+        "headline": "TadTools API",
+        "image": "https://tad0616.github.io",
+        "keywords": "XOOPS api tadtools 網站工具包模組",
+        "genre": "xoops",
+        "datePublished": "2019-07-17",
+        "dateCreated": "2019-07-17",
+        "dateModified": "2019-07-18",
+        "url": "https://tad0616.github.io/2019/07/17/TadTools-API/",
+        "description": "這是用來取的 XOOPS 的一些基本資訊，如站名、使用的模組等資訊的API，json格式。"
+        "wordCount": 1192
+    }
+</script>
 
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2019/07/18/TadGallery-API/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          TadGallery API
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2019/07/01/tadnews-API/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">tadnews API</div>
-    </a>
-  
-</nav>
-
-  
 </article>
 
-</section>
-        
-          <aside id="sidebar">
-  
+    <section id="comments">
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">分類</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/xoops/">xoops</a></li></ul>
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
-  </div>
 
-
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">標籤</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/XOOPS/">XOOPS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/api/">api</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tadgallery/">tadgallery</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tadnews/">tadnews</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tadtools/">tadtools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/安裝/">安裝</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/新聞模組/">新聞模組</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/網站工具包模組/">網站工具包模組</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/電子相簿模組/">電子相簿模組</a></li></ul>
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>追蹤 :</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
     </div>
-  </div>
-
-
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">標籤雲</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/XOOPS/" style="font-size: 20px;">XOOPS</a> <a href="/tags/api/" style="font-size: 20px;">api</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/tadgallery/" style="font-size: 10px;">tadgallery</a> <a href="/tags/tadnews/" style="font-size: 10px;">tadnews</a> <a href="/tags/tadtools/" style="font-size: 10px;">tadtools</a> <a href="/tags/安裝/" style="font-size: 10px;">安裝</a> <a href="/tags/新聞模組/" style="font-size: 10px;">新聞模組</a> <a href="/tags/網站工具包模組/" style="font-size: 10px;">網站工具包模組</a> <a href="/tags/電子相簿模組/" style="font-size: 10px;">電子相簿模組</a>
-    </div>
-  </div>
-
-  
+        
+<nav id="article-nav">
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">彙整</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a></li></ul>
-    </div>
-  </div>
-
-
-  
+        <a href="/2019/07/18/TadGallery-API/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">下一篇</strong>
+        <p class="article-nav-title">
+        
+            TadGallery API
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2019/07/18/TadGallery-API/">TadGallery API</a>
-          </li>
-        
-          <li>
-            <a href="/2019/07/17/TadTools-API/">TadTools API</a>
-          </li>
-        
-          <li>
-            <a href="/2019/07/01/tadnews-API/">tadnews API</a>
-          </li>
-        
-          <li>
-            <a href="/2019/06/27/Hexo-安裝紀錄/">Hexo 安裝紀錄</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2019 Tad<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
+    
+        <a href="/2019/07/01/tadnews-API/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">tadnews API</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
 </nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/07/18/TadGallery-API/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/xoops/">xoops</a></p>
+                            <p class="item-title"><a href="/2019/07/18/TadGallery-API/" class="title">TadGallery API</a></p>
+                            <p class="item-date"><time datetime="2019-07-18T03:48:05.000Z" itemprop="datePublished">2019-07-18</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/07/17/TadTools-API/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/xoops/">xoops</a></p>
+                            <p class="item-title"><a href="/2019/07/17/TadTools-API/" class="title">TadTools API</a></p>
+                            <p class="item-date"><time datetime="2019-07-17T07:15:43.000Z" itemprop="datePublished">2019-07-17</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/07/01/tadnews-API/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/xoops/">xoops</a></p>
+                            <p class="item-title"><a href="/2019/07/01/tadnews-API/" class="title">tadnews API</a></p>
+                            <p class="item-date"><time datetime="2019-07-01T03:20:12.000Z" itemprop="datePublished">2019-07-01</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/06/27/Hexo-安裝紀錄/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/hexo/">hexo</a></p>
+                            <p class="item-title"><a href="/2019/06/27/Hexo-安裝紀錄/" class="title">Hexo 安裝紀錄</a></p>
+                            <p class="item-date"><time datetime="2019-06-27T07:00:22.000Z" itemprop="datePublished">2019-06-27</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">分類</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/xoops/">xoops</a><span class="category-list-count">3</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">所有文章</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">標籤</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/XOOPS/">XOOPS</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/api/">api</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tadgallery/">tadgallery</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tadnews/">tadnews</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tadtools/">tadtools</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/安裝/">安裝</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/新聞模組/">新聞模組</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/網站工具包模組/">網站工具包模組</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/電子相簿模組/">電子相簿模組</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">標籤雲</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/XOOPS/" style="font-size: 20px;">XOOPS</a> <a href="/tags/api/" style="font-size: 20px;">api</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/tadgallery/" style="font-size: 10px;">tadgallery</a> <a href="/tags/tadnews/" style="font-size: 10px;">tadnews</a> <a href="/tags/tadtools/" style="font-size: 10px;">tadtools</a> <a href="/tags/安裝/" style="font-size: 10px;">安裝</a> <a href="/tags/新聞模組/" style="font-size: 10px;">新聞模組</a> <a href="/tags/網站工具包模組/" style="font-size: 10px;">網站工具包模組</a> <a href="/tags/電子相簿模組/" style="font-size: 10px;">電子相簿模組</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">連結</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2019 Tad</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+            <div class="footer-plugins">
+              
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    var disqus_url = 'https://tad0616.github.io/2019/07/17/TadTools-API/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/js/script.js"></script>
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
 
 
 
-  </div>
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
 </body>
 </html>

@@ -99,19 +99,21 @@
     <link href="https://tad0616.github.io/2019/06/27/Hexo-%E5%AE%89%E8%A3%9D%E7%B4%80%E9%8C%84/"/>
     <id>https://tad0616.github.io/2019/06/27/Hexo-安裝紀錄/</id>
     <published>2019-06-27T07:00:22.000Z</published>
-    <updated>2019-06-27T09:12:05.000Z</updated>
+    <updated>2019-07-18T08:18:53.896Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="一、安裝hexo"><a href="#一、安裝hexo" class="headerlink" title="一、安裝hexo"></a>一、安裝hexo</h2><ul><li><p>先安裝node.js、git</p></li><li><p>建立個資料夾，如 hexo</p></li><li><p>進入資料夾，開啟終端機，初始化專案</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init -f</span><br></pre></td></tr></table></figure></li><li><p>-f表示force的意思，不加這個，npm會讓你輸入一堆信息，比如name、version之類，如果只是做做實驗小demo，直接-f，npm幫你初始化package.json，並填充各種默認值，省事。</p></li><li><p>安裝 Hexo</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure></li><li><p>用hexo建立部落格，底下tad543專案為目錄名稱</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init tad543</span><br></pre></td></tr></table></figure></li><li><p>建立完，登入該資料夾，並安裝依賴套件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> tad543</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></li><li><p>生成網站頁面</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure></li><li><p>啟用測試站</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></li></ul><p>然後打開瀏覽器，輸入 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 即可</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="一、安裝hexo"><a href="#一、安裝hexo" class="headerlink" title="一、安裝hexo"></a>一、安裝hexo</h2><ul><li><p>先安裝node.js、git</p></li><li><p>建立個資料夾，如 hexo</p></li><li><p>進入資料夾，開啟終端機，初始化專案</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init -f</span><br></pre></td></tr></table></figure></li><li><p>-f表示force的意思，不加這個，npm會讓你輸入一堆信息，比如name、version之類，如果只是做做實驗小demo，直接-f，npm幫你初始化package.json，並填充各種默認值，省事。</p><a id="more"></a></li><li><p>安裝 Hexo</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure></li><li><p>用hexo建立部落格，底下tad543專案為目錄名稱</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init tad543</span><br></pre></td></tr></table></figure></li><li><p>建立完，登入該資料夾，並安裝依賴套件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> tad543</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></li><li><p>生成網站頁面</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure></li><li><p>啟用測試站</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></li></ul><p>然後打開瀏覽器，輸入 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 即可</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;一、安裝hexo&quot;&gt;&lt;a href=&quot;#一、安裝hexo&quot; class=&quot;headerlink&quot; title=&quot;一、安裝hexo&quot;&gt;&lt;/a&gt;一、安裝hexo&lt;/h2&gt;&lt;ul&gt;
+      &lt;h2 id=&quot;一、安裝hexo&quot;&gt;&lt;a href=&quot;#一、安裝hexo&quot; class=&quot;headerlink&quot; title=&quot;一、安裝hexo&quot;&gt;&lt;/a&gt;一、安裝hexo&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;先安裝node.js、git&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;建立個資料
-      
+&lt;li&gt;&lt;p&gt;建立個資料夾，如 hexo&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;進入資料夾，開啟終端機，初始化專案&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm init -f&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;-f表示force的意思，不加這個，npm會讓你輸入一堆信息，比如name、version之類，如果只是做做實驗小demo，直接-f，npm幫你初始化package.json，並填充各種默認值，省事。&lt;/p&gt;
     
     </summary>
     

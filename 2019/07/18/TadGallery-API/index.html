@@ -12,15 +12,18 @@
   <link rel="shortcut icon" href="/">
   <link rel="alternate" href="/atom.xml" title="Tad 的五四三">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="XOOPS,tadgallery,api,電子相簿模組">
+  <meta name="description" content="取得所有分類http://網域/modules/tadgallery/app_api.php?op=get_cates參數：  get_cates  https://www.lces.tn.edu.tw/modules/tadgallery/app_api.php?op=get_cates 回傳內容： 123456789101112131415161718192021222324252627282">
+<meta name="keywords" content="XOOPS,tadgallery,api,電子相簿模組">
 <meta property="og:type" content="article">
 <meta property="og:title" content="TadGallery API">
 <meta property="og:url" content="https://tad0616.github.io/2019/07/18/TadGallery-API/index.html">
 <meta property="og:site_name" content="Tad 的五四三">
+<meta property="og:description" content="取得所有分類http://網域/modules/tadgallery/app_api.php?op=get_cates參數：  get_cates  https://www.lces.tn.edu.tw/modules/tadgallery/app_api.php?op=get_cates 回傳內容： 123456789101112131415161718192021222324252627282">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2019-07-18T03:49:56.243Z">
+<meta property="og:updated_time" content="2019-07-18T06:12:23.227Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TadGallery API">
+<meta name="twitter:description" content="取得所有分類http://網域/modules/tadgallery/app_api.php?op=get_cates參數：  get_cates  https://www.lces.tn.edu.tw/modules/tadgallery/app_api.php?op=get_cates 回傳內容： 123456789101112131415161718192021222324252627282">
     
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -58,12 +61,6 @@
 						<li>
 							<a class='flat-box nav-archives' href='/archives'>
 								Archives
-							</a>
-						</li>
-					
-						<li>
-							<a class='flat-box nav-gallery' href='https://photos.google.com/album/AF1QipNoqKYgspQo5O1YhlFXGCQ7p575KBH3Yxf8WHL4?hl=zh-CN'>
-								Gallery
 							</a>
 						</li>
 					
@@ -116,10 +113,6 @@
 				Archives
 			</a>
 		
-			<a href="https://photos.google.com/album/AF1QipNoqKYgspQo5O1YhlFXGCQ7p575KBH3Yxf8WHL4?hl=zh-CN" class="nav-gallery nav">
-				Gallery
-			</a>
-		
 			<a href="/about" class="nav-about nav">
 				About
 			</a>
@@ -146,11 +139,26 @@
 	
 	</section>
 	
-		<section class="toc-wrapper"></section>
+		<section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#取得所有分類"><span class="toc-number">1.</span> <span class="toc-text">取得所有分類</span></a></li></ol></section>
 	
 	<section class="article typo">
   	<div class="article-entry" itemprop="articleBody">
-    	
+    	<h2 id="取得所有分類"><a href="#取得所有分類" class="headerlink" title="取得所有分類"></a>取得所有分類</h2><p>http://網域/modules/tadgallery/app_api.php?op=get_cates<br>參數：</p>
+<ul>
+<li>get_cates</li>
+</ul>
+<p><a href="https://www.lces.tn.edu.tw/modules/tadgallery/app_api.php?op=get_cates" target="_blank" rel="noopener">https://www.lces.tn.edu.tw/modules/tadgallery/app_api.php?op=get_cates</a> 回傳內容：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"csn"</span>: <span class="string">"1"</span>,</span><br><span class="line">        <span class="attr">"title"</span>: <span class="string">"校園活動"</span>,</span><br><span class="line">        <span class="attr">"of_csn"</span>: <span class="string">"0"</span>,</span><br><span class="line">        <span class="attr">"sort"</span>: <span class="string">"1"</span>,</span><br><span class="line">        <span class="attr">"cover"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tadgallery\/medium\/2017_10_03\/30_m_P_20170930_080840(001).jpg"</span>,</span><br><span class="line">        <span class="attr">"url"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/modules\/tadgallery\/index.php?csn=1"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"csn"</span>: <span class="string">"2"</span>,</span><br><span class="line">        <span class="attr">"title"</span>: <span class="string">"校外教學"</span>,</span><br><span class="line">        <span class="attr">"of_csn"</span>: <span class="string">"0"</span>,</span><br><span class="line">        <span class="attr">"sort"</span>: <span class="string">"2"</span>,</span><br><span class="line">        <span class="attr">"cover"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tadgallery\/medium\/2007_04_14\/1_m_0430.jpg"</span>,</span><br><span class="line">        <span class="attr">"url"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/modules\/tadgallery\/index.php?csn=2"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"csn"</span>: <span class="string">"3"</span>,</span><br><span class="line">        <span class="attr">"title"</span>: <span class="string">"畢業旅行"</span>,</span><br><span class="line">        <span class="attr">"of_csn"</span>: <span class="string">"0"</span>,</span><br><span class="line">        <span class="attr">"sort"</span>: <span class="string">"3"</span>,</span><br><span class="line">        <span class="attr">"cover"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tadgallery\/medium\/2012_03_08\/23_m_2012六年級畢旅 084.jpg"</span>,</span><br><span class="line">        <span class="attr">"url"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/modules\/tadgallery\/index.php?csn=3"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"csn"</span>: <span class="string">"4"</span>,</span><br><span class="line">        <span class="attr">"title"</span>: <span class="string">"20090122科工館校外教學"</span>,</span><br><span class="line">        <span class="attr">"of_csn"</span>: <span class="string">"2"</span>,</span><br><span class="line">        <span class="attr">"sort"</span>: <span class="string">"4"</span>,</span><br><span class="line">        <span class="attr">"cover"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tadgallery\/medium\/2009_10_22\/2_m_20090122科工館校外教學 259.jpg"</span>,</span><br><span class="line">        <span class="attr">"url"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/modules\/tadgallery\/index.php?csn=4"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"csn"</span>: <span class="string">"5"</span>,</span><br><span class="line">        <span class="attr">"title"</span>: <span class="string">"99人權教育活動"</span>,</span><br><span class="line">        <span class="attr">"of_csn"</span>: <span class="string">"1"</span>,</span><br><span class="line">        <span class="attr">"sort"</span>: <span class="string">"4"</span>,</span><br><span class="line">        <span class="attr">"cover"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tadgallery\/medium\/2010_12_02\/8_m_人權教育-親職教育研習2.JPG"</span>,</span><br><span class="line">        <span class="attr">"url"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/modules\/tadgallery\/index.php?csn=5"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"csn"</span>: <span class="string">"6"</span>,</span><br><span class="line">        <span class="attr">"title"</span>: <span class="string">"幼稚園母語日教學"</span>,</span><br><span class="line">        <span class="attr">"of_csn"</span>: <span class="string">"1"</span>,</span><br><span class="line">        <span class="attr">"sort"</span>: <span class="string">"4"</span>,</span><br><span class="line">        <span class="attr">"cover"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tadgallery\/2011_05_30\/17_013.jpg"</span>,</span><br><span class="line">        <span class="attr">"url"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/modules\/tadgallery\/index.php?csn=6"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"csn"</span>: <span class="string">"7"</span>,</span><br><span class="line">        <span class="attr">"title"</span>: <span class="string">"永續 植樹 美化校園"</span>,</span><br><span class="line">        <span class="attr">"of_csn"</span>: <span class="string">"1"</span>,</span><br><span class="line">        <span class="attr">"sort"</span>: <span class="string">"4"</span>,</span><br><span class="line">        <span class="attr">"cover"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tadgallery\/medium\/2017_10_03\/42_m_P_20170930_082117(001).jpg"</span>,</span><br><span class="line">        <span class="attr">"url"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/modules\/tadgallery\/index.php?csn=7"</span></span><br><span class="line">    &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>csn：分類編號</li>
+<li>title：分類標題</li>
+<li>of_csn：父分類編號</li>
+<li>sort：分類排序</li>
+<li>cover：相簿代表圖</li>
+<li>url：相簿的網址</li>
+</ul>
+
   	</div>
 	  
 	  <div class="article-tags tags">
@@ -202,20 +210,8 @@
 <div class='content'>
     <ul class="entry">
     
-        <li><a class="flat-box" target="_blank" href="https://ccoooss.com">
-            <div class='name'>ClassicOldSong</div>
-        </a></li>
-    
-        <li><a class="flat-box" target="_blank" href="https://frantic1048.logdown.com/">
-            <div class='name'>Frantic1048</div>
-        </a></li>
-    
-        <li><a class="flat-box" target="_blank" href="https://hclmaster.github.io/">
-            <div class='name'>Hclmaster</div>
-        </a></li>
-    
-        <li><a class="flat-box" target="_blank" href="https://whst.github.io/">
-            <div class='name'>WANG Hsü-Tung</div>
+        <li><a class="flat-box" target="_blank" href="https://wst24365888.github.io/">
+            <div class='name'>Xyphuz&#39;s Notes</div>
         </a></li>
     
     </ul>
@@ -254,14 +250,14 @@
 	<div class="social-wrapper">
   	
       
-        <a href="https://github.com/stkevintan" class="social github"
+        <a href="https://github.com/tad0616" class="social github"
           target="_blank" rel="external">
           <span class="icon icon-github"></span>
         </a>
       
-        <a href="https://twitter.com/kevinsfork" class="social twitter"
+        <a href="https://www.facebook.com/tad0616" class="social facebook"
           target="_blank" rel="external">
-          <span class="icon icon-twitter"></span>
+          <span class="icon icon-facebook"></span>
         </a>
       
         <a href="/atom.xml" class="social rss"

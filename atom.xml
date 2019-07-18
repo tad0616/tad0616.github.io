@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tad0616.github.io/"/>
-  <updated>2019-07-18T08:29:31.508Z</updated>
+  <updated>2019-07-18T08:45:17.553Z</updated>
   <id>https://tad0616.github.io/</id>
   
   <author>
@@ -15,20 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>categories</title>
-    <link href="https://tad0616.github.io/2019/07/18/categories/"/>
-    <id>https://tad0616.github.io/2019/07/18/categories/</id>
-    <published>2019-07-18T08:29:31.000Z</published>
-    <updated>2019-07-18T08:29:31.508Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>TadGallery API</title>

@@ -10,21 +10,21 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="XOOPS,tadgallery,api,電子相簿模組">
+        <meta name="keywords" content="XOOPS,api,tadgallery,電子相簿模組">
     
-    <meta name="description" content="這是寫給 XOOPS 的 tadgallery 相簿模組用的API，json格式。">
-<meta name="keywords" content="XOOPS,tadgallery,api,電子相簿模組">
+    <meta name="description" content="這是寫給 XOOPS 的 tadgallery 相簿模組用的API，回傳json格式。">
+<meta name="keywords" content="XOOPS,api,tadgallery,電子相簿模組">
 <meta property="og:type" content="article">
 <meta property="og:title" content="TadGallery API">
 <meta property="og:url" content="https://tad0616.github.io/2019/07/18/TadGallery-API/index.html">
 <meta property="og:site_name" content="Tad 的五四三">
-<meta property="og:description" content="這是寫給 XOOPS 的 tadgallery 相簿模組用的API，json格式。">
+<meta property="og:description" content="這是寫給 XOOPS 的 tadgallery 相簿模組用的API，回傳json格式。">
 <meta property="og:locale" content="zh-TW">
 <meta property="og:image" content="https://tad0616.github.io/img/apipng.png">
-<meta property="og:updated_time" content="2019-07-18T11:10:26.737Z">
+<meta property="og:updated_time" content="2019-07-19T05:24:58.085Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TadGallery API">
-<meta name="twitter:description" content="這是寫給 XOOPS 的 tadgallery 相簿模組用的API，json格式。">
+<meta name="twitter:description" content="這是寫給 XOOPS 的 tadgallery 相簿模組用的API，回傳json格式。">
 <meta name="twitter:image" content="https://tad0616.github.io/img/apipng.png">
     
 
@@ -175,15 +175,16 @@
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p>這是寫給 XOOPS 的 tadgallery 相簿模組用的API，json格式。</p>
+            <p>這是寫給 XOOPS 的 tadgallery 相簿模組用的API，回傳json格式。</p>
 <a id="more"></a>
 
-<h2 id="取得所有相簿"><a href="#取得所有相簿" class="headerlink" title="取得所有相簿"></a>取得所有相簿</h2><p>http://網域/modules/tadgallery/app_api.php?op=get_cates<br>參數：</p>
+<h2 id="取得所有相簿"><a href="#取得所有相簿" class="headerlink" title="取得所有相簿"></a>取得所有相簿</h2><p>http://網域/modules/tadgallery/app_api.php?op=get_cates&amp;of_csn=父相簿（分類）編號<br>參數：</p>
 <ul>
 <li>get_cates</li>
+<li>of_csn</li>
 </ul>
-<p><a href="https://www.lces.tn.edu.tw/modules/tadgallery/app_api.php?op=get_cates" target="_blank" rel="noopener">https://www.lces.tn.edu.tw/modules/tadgallery/app_api.php?op=get_cates</a> 回傳內容：</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"csn"</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="attr">"title"</span>: <span class="string">"校園活動"</span>,</span><br><span class="line">        <span class="attr">"of_csn"</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">"dir_count"</span>: <span class="number">3</span>,</span><br><span class="line">        <span class="attr">"file_count"</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">"sort"</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="attr">"cover"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tadgallery\/2011_05_30\/15_016.jpg"</span>,</span><br><span class="line">        <span class="attr">"url"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/modules\/tadgallery\/index.php?csn=1"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"csn"</span>: <span class="number">2</span>,</span><br><span class="line">        <span class="attr">"title"</span>: <span class="string">"校外教學"</span>,</span><br><span class="line">        <span class="attr">"of_csn"</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">"dir_count"</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="attr">"file_count"</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="attr">"sort"</span>: <span class="number">2</span>,</span><br><span class="line">        <span class="attr">"cover"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tadgallery\/medium\/2007_04_14\/1_m_0430.jpg"</span>,</span><br><span class="line">        <span class="attr">"url"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/modules\/tadgallery\/index.php?csn=2"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"csn"</span>: <span class="number">3</span>,</span><br><span class="line">        <span class="attr">"title"</span>: <span class="string">"畢業旅行"</span>,</span><br><span class="line">        <span class="attr">"of_csn"</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">"dir_count"</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">"file_count"</span>: <span class="number">7</span>,</span><br><span class="line">        <span class="attr">"sort"</span>: <span class="number">3</span>,</span><br><span class="line">        <span class="attr">"cover"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tadgallery\/medium\/2012_03_08\/19_m_2012六年級畢旅 015.jpg"</span>,</span><br><span class="line">        <span class="attr">"url"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/modules\/tadgallery\/index.php?csn=3"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"csn"</span>: <span class="number">4</span>,</span><br><span class="line">        <span class="attr">"title"</span>: <span class="string">"20090122科工館校外教學"</span>,</span><br><span class="line">        <span class="attr">"of_csn"</span>: <span class="number">2</span>,</span><br><span class="line">        <span class="attr">"dir_count"</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">"file_count"</span>: <span class="number">3</span>,</span><br><span class="line">        <span class="attr">"sort"</span>: <span class="number">4</span>,</span><br><span class="line">        <span class="attr">"cover"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tadgallery\/medium\/2009_10_22\/3_m_20090122科工館校外教學 270.jpg"</span>,</span><br><span class="line">        <span class="attr">"url"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/modules\/tadgallery\/index.php?csn=4"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"csn"</span>: <span class="number">5</span>,</span><br><span class="line">        <span class="attr">"title"</span>: <span class="string">"99人權教育活動"</span>,</span><br><span class="line">        <span class="attr">"of_csn"</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="attr">"dir_count"</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">"file_count"</span>: <span class="number">6</span>,</span><br><span class="line">        <span class="attr">"sort"</span>: <span class="number">4</span>,</span><br><span class="line">        <span class="attr">"cover"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tadgallery\/medium\/2010_12_02\/8_m_人權教育-親職教育研習2.JPG"</span>,</span><br><span class="line">        <span class="attr">"url"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/modules\/tadgallery\/index.php?csn=5"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"csn"</span>: <span class="number">6</span>,</span><br><span class="line">        <span class="attr">"title"</span>: <span class="string">"幼稚園母語日教學"</span>,</span><br><span class="line">        <span class="attr">"of_csn"</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="attr">"dir_count"</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">"file_count"</span>: <span class="number">8</span>,</span><br><span class="line">        <span class="attr">"sort"</span>: <span class="number">4</span>,</span><br><span class="line">        <span class="attr">"cover"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tadgallery\/2011_05_30\/11_033.jpg"</span>,</span><br><span class="line">        <span class="attr">"url"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/modules\/tadgallery\/index.php?csn=6"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"csn"</span>: <span class="number">7</span>,</span><br><span class="line">        <span class="attr">"title"</span>: <span class="string">"永續 植樹 美化校園"</span>,</span><br><span class="line">        <span class="attr">"of_csn"</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="attr">"dir_count"</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">"file_count"</span>: <span class="number">20</span>,</span><br><span class="line">        <span class="attr">"sort"</span>: <span class="number">4</span>,</span><br><span class="line">        <span class="attr">"cover"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tadgallery\/medium\/2017_10_03\/41_m_P_20170930_082048(001).jpg"</span>,</span><br><span class="line">        <span class="attr">"url"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/modules\/tadgallery\/index.php?csn=7"</span></span><br><span class="line">    &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p><a href="https://www.lces.tn.edu.tw/modules/tadgallery/app_api.php?op=get_cates&amp;of_csn=0" target="_blank" rel="noopener">https://www.lces.tn.edu.tw/modules/tadgallery/app_api.php?op=get_cates&amp;of_csn=0</a> 回傳內容：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"csn"</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="attr">"title"</span>: <span class="string">"校園活動"</span>,</span><br><span class="line">        <span class="attr">"of_csn"</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">"dir_count"</span>: <span class="number">3</span>,</span><br><span class="line">        <span class="attr">"file_count"</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">"sort"</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="attr">"cover"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tadgallery\/2011_05_30\/15_016.jpg"</span>,</span><br><span class="line">        <span class="attr">"url"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/modules\/tadgallery\/index.php?csn=1"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"csn"</span>: <span class="number">2</span>,</span><br><span class="line">        <span class="attr">"title"</span>: <span class="string">"校外教學"</span>,</span><br><span class="line">        <span class="attr">"of_csn"</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">"dir_count"</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="attr">"file_count"</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="attr">"sort"</span>: <span class="number">2</span>,</span><br><span class="line">        <span class="attr">"cover"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tadgallery\/medium\/2007_04_14\/1_m_0430.jpg"</span>,</span><br><span class="line">        <span class="attr">"url"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/modules\/tadgallery\/index.php?csn=2"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"csn"</span>: <span class="number">3</span>,</span><br><span class="line">        <span class="attr">"title"</span>: <span class="string">"畢業旅行"</span>,</span><br><span class="line">        <span class="attr">"of_csn"</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">"dir_count"</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">"file_count"</span>: <span class="number">7</span>,</span><br><span class="line">        <span class="attr">"sort"</span>: <span class="number">3</span>,</span><br><span class="line">        <span class="attr">"cover"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/uploads\/tadgallery\/medium\/2012_03_08\/19_m_2012六年級畢旅 015.jpg"</span>,</span><br><span class="line">        <span class="attr">"url"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/modules\/tadgallery\/index.php?csn=3"</span></span><br><span class="line">    &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>csn：相簿編號</li>
@@ -226,7 +227,7 @@
 
 
 
-    <a data-url="https://tad0616.github.io/2019/07/18/TadGallery-API/" data-id="cjy8ezela000200uysbrqgubi" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="https://tad0616.github.io/2019/07/18/TadGallery-API/" data-id="cjy9nw5d60005w4uyy8jt2usu" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -298,14 +299,14 @@
         },
         "headline": "TadGallery API",
         "image": "https://tad0616.github.iohttps://tad0616.github.io/img/apipng.png",
-        "keywords": "XOOPS tadgallery api 電子相簿模組",
+        "keywords": "XOOPS api tadgallery 電子相簿模組",
         "genre": "xoops",
         "datePublished": "2019-07-18",
         "dateCreated": "2019-07-18",
-        "dateModified": "2019-07-18",
+        "dateModified": "2019-07-19",
         "url": "https://tad0616.github.io/2019/07/18/TadGallery-API/",
-        "description": "這是寫給 XOOPS 的 tadgallery 相簿模組用的API，json格式。"
-        "wordCount": 2133
+        "description": "這是寫給 XOOPS 的 tadgallery 相簿模組用的API，回傳json格式。"
+        "wordCount": 1666
     }
 </script>
 
@@ -353,6 +354,16 @@
         
 <nav id="article-nav">
     
+        <a href="/2019/07/19/Tad-Player-API/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">下一篇</strong>
+        <p class="article-nav-title">
+        
+            Tad Player API
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
     
         <a href="/2019/07/17/TadTools-API/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">上一篇</strong>
@@ -374,6 +385,26 @@
         <h3 class="widget-title">最新文章</h3>
         <div class="widget">
             <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/07/19/Tad-Player-API/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://tad0616.github.io/img/apipng.png)" alt="Tad Player API" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/xoops/">xoops</a></p>
+                            <p class="item-title"><a href="/2019/07/19/Tad-Player-API/" class="title">Tad Player API</a></p>
+                            <p class="item-date"><time datetime="2019-07-19T05:22:20.000Z" itemprop="datePublished">2019-07-19</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -464,7 +495,7 @@
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">分類</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/xoops/">xoops</a><span class="category-list-count">3</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/xoops/">xoops</a><span class="category-list-count">4</span></li></ul>
         </div>
     </div>
 
@@ -474,7 +505,7 @@
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">所有文章</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">1</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -484,7 +515,7 @@
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">標籤</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/XOOPS/">XOOPS</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/api/">api</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tadgallery/">tadgallery</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tadnews/">tadnews</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tadtools/">tadtools</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/安裝/">安裝</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/新聞模組/">新聞模組</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/網站工具包模組/">網站工具包模組</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/電子相簿模組/">電子相簿模組</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/XOOPS/">XOOPS</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/api/">api</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tad-player/">tad_player_</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tadgallery/">tadgallery</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tadnews/">tadnews</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tadtools/">tadtools</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/安裝/">安裝</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/影音播放模組/">影音播放模組</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/新聞模組/">新聞模組</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/網站工具包模組/">網站工具包模組</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/電子相簿模組/">電子相簿模組</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -494,7 +525,7 @@
     <div class="widget-wrap widget-float">
         <h3 class="widget-title">標籤雲</h3>
         <div class="widget tagcloud">
-            <a href="/tags/XOOPS/" style="font-size: 20px;">XOOPS</a> <a href="/tags/api/" style="font-size: 20px;">api</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/tadgallery/" style="font-size: 10px;">tadgallery</a> <a href="/tags/tadnews/" style="font-size: 10px;">tadnews</a> <a href="/tags/tadtools/" style="font-size: 10px;">tadtools</a> <a href="/tags/安裝/" style="font-size: 10px;">安裝</a> <a href="/tags/新聞模組/" style="font-size: 10px;">新聞模組</a> <a href="/tags/網站工具包模組/" style="font-size: 10px;">網站工具包模組</a> <a href="/tags/電子相簿模組/" style="font-size: 10px;">電子相簿模組</a>
+            <a href="/tags/XOOPS/" style="font-size: 20px;">XOOPS</a> <a href="/tags/api/" style="font-size: 20px;">api</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/tad-player/" style="font-size: 10px;">tad_player_</a> <a href="/tags/tadgallery/" style="font-size: 10px;">tadgallery</a> <a href="/tags/tadnews/" style="font-size: 10px;">tadnews</a> <a href="/tags/tadtools/" style="font-size: 10px;">tadtools</a> <a href="/tags/安裝/" style="font-size: 10px;">安裝</a> <a href="/tags/影音播放模組/" style="font-size: 10px;">影音播放模組</a> <a href="/tags/新聞模組/" style="font-size: 10px;">新聞模組</a> <a href="/tags/網站工具包模組/" style="font-size: 10px;">網站工具包模組</a> <a href="/tags/電子相簿模組/" style="font-size: 10px;">電子相簿模組</a>
         </div>
     </div>
 

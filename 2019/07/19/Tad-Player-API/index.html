@@ -21,7 +21,7 @@
 <meta property="og:description" content="這是寫給 XOOPS 的 tad_player 影音模組用的API，回傳json格式。">
 <meta property="og:locale" content="zh-TW">
 <meta property="og:image" content="https://tad0616.github.io/img/apipng.png">
-<meta property="og:updated_time" content="2019-07-19T07:20:29.953Z">
+<meta property="og:updated_time" content="2019-07-19T08:00:16.443Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Tad Player API">
 <meta name="twitter:description" content="這是寫給 XOOPS 的 tad_player 影音模組用的API，回傳json格式。">
@@ -181,18 +181,18 @@
 <h2 id="取得所有分類"><a href="#取得所有分類" class="headerlink" title="取得所有分類"></a>取得所有分類</h2><p>http://網域/modules/tad_player/app_api.php?op=get_cates&amp;of_csn=父分類編號<br>參數：</p>
 <ul>
 <li>op = get_cates</li>
-<li>of_csn = 0</li>
+<li>of_csn = 父分類編號（整數）</li>
 </ul>
 <p><a href="https://www.lces.tn.edu.tw/modules/tad_player/app_api.php?op=get_cates" target="_blank" rel="noopener">https://www.lces.tn.edu.tw/modules/tad_player/app_api.php?op=get_cates</a> 回傳內容：</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"pcsn"</span>: <span class="string">"10"</span>,</span><br><span class="line">        <span class="attr">"title"</span>: <span class="string">"測試中"</span>,</span><br><span class="line">        <span class="attr">"of_csn"</span>: <span class="string">"0"</span>,</span><br><span class="line">        <span class="attr">"sort"</span>: <span class="string">"0"</span>,</span><br><span class="line">        <span class="attr">"url"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/modules\/tad_player\/index.php?pcsn=10"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"pcsn"</span>: <span class="string">"1"</span>,</span><br><span class="line">        <span class="attr">"title"</span>: <span class="string">"學校活動"</span>,</span><br><span class="line">        <span class="attr">"of_csn"</span>: <span class="string">"0"</span>,</span><br><span class="line">        <span class="attr">"sort"</span>: <span class="string">"1"</span>,</span><br><span class="line">        <span class="attr">"url"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/modules\/tad_player\/index.php?pcsn=1"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"pcsn"</span>: <span class="string">"2"</span>,</span><br><span class="line">        <span class="attr">"title"</span>: <span class="string">"政令宣導"</span>,</span><br><span class="line">        <span class="attr">"of_csn"</span>: <span class="string">"0"</span>,</span><br><span class="line">        <span class="attr">"sort"</span>: <span class="string">"2"</span>,</span><br><span class="line">        <span class="attr">"url"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/modules\/tad_player\/index.php?pcsn=2"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"pcsn"</span>: <span class="string">"3"</span>,</span><br><span class="line">        <span class="attr">"title"</span>: <span class="string">"Flash動畫"</span>,</span><br><span class="line">        <span class="attr">"of_csn"</span>: <span class="string">"0"</span>,</span><br><span class="line">        <span class="attr">"sort"</span>: <span class="string">"3"</span>,</span><br><span class="line">        <span class="attr">"url"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/modules\/tad_player\/index.php?pcsn=3"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"pcsn"</span>: <span class="string">"4"</span>,</span><br><span class="line">        <span class="attr">"title"</span>: <span class="string">"資訊融入教學"</span>,</span><br><span class="line">        <span class="attr">"of_csn"</span>: <span class="string">"0"</span>,</span><br><span class="line">        <span class="attr">"sort"</span>: <span class="string">"4"</span>,</span><br><span class="line">        <span class="attr">"url"</span>: <span class="string">"https:\/\/www.lces.tn.edu.tw\/modules\/tad_player\/index.php?pcsn=4"</span></span><br><span class="line">    &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
 
 <ul>
-<li>pcsn：分類編號</li>
-<li>title：分類標題</li>
-<li>of_csn：父分類編號</li>
-<li>sort：分類排序</li>
-<li>cover：分類代表圖</li>
-<li>url：分類的網址</li>
+<li>pcsn:分類編號</li>
+<li>title:分類標題</li>
+<li>of_csn:父分類編號</li>
+<li>sort:分類排序</li>
+<li>cover:分類代表圖</li>
+<li>url:分類的網址</li>
 </ul>
 
         </div>
